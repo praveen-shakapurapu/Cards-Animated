@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <button type="submit" class="btn" onclick="openPop()">Download Code</button>
+        <div class="popup" id="popup">
+            <img src="https://static.vecteezy.com/system/resources/previews/010/152/436/original/tick-check-mark-icon-sign-symbol-design-free-png.png">
+            <h2>Thank You!</h2>
+            <p>Your code as been successfully downloaded. Thank you!</p>
+            <button type="button" onclick="closePop()">Ok, close</button>
+            <button type="button" onclick="openfile()">Open file</button>
+        </div>
+    </div>
+    <script>
+        let pop = document.getElementById("popup")
+        function openPop(){
+            pop.classList.add("open")
+        }
+        function closePop(){
+            pop.classList.remove("open")
+        }
+    </script>
+</body>
+</html>
